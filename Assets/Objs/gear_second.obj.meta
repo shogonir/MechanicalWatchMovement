@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: e03e1ee6cc225469488d71e29a84813e
-timeCreated: 1515945295
+guid: 4e5ab75bf2268482c8db2d5c26cf929a
+timeCreated: 1516511917
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: gear_sample
-    400000: //RootNode
-    400002: gear_sample
-    2300000: gear_sample
-    3300000: gear_sample
-    4300000: gear_sample
+    100000: gear_second
+    100002: //RootNode
+    400000: gear_second
+    400002: //RootNode
+    2300000: gear_second
+    3300000: gear_second
+    4300000: gear_second
   materials:
     importMaterials: 1
     materialName: 0
