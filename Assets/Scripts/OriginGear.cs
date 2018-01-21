@@ -28,10 +28,10 @@ public class OriginGear : MonoBehaviour
     void Update()
     {
         float timeNow = Time.realtimeSinceStartup;
-        float timeSurplus = this.CalculateTimeSurplus(timeNow);
-        float timeSurplusPrevious = this.CalculateTimeSurplus(this.timePrevious);
-        float timeDelta = timeSurplus - timeSurplusPrevious + 0.000001f;
-        if (timeDelta >= this.timeTick)
+        // float timeSurplus = this.CalculateTimeSurplus(timeNow);
+        // float timeSurplusPrevious = this.CalculateTimeSurplus(this.timePrevious);
+        float timeDelta = timeNow - this.timePrevious;
+        if (timeDelta > this.timeTick)
         {
             int tooth = (int)(timeDelta / this.timeTick);
             this.Rotate(-360f * tooth / this.numTooth);
@@ -39,10 +39,10 @@ public class OriginGear : MonoBehaviour
         }
     }
 
-    private float CalculateTimeSurplus(float time)
-    {
-        return time - (time % this.timeTick);
-    }
+    // private float CalculateTimeSurplus(float time)
+    // {
+    //     return time - (time % this.timeTick);
+    // }
 
     public void Enable()
     {
