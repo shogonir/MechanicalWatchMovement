@@ -331,7 +331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c8cf4f1e587a4dad94dd8657378801d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numTooth: 22
+  numTooth: 72
   nextGearList: []
   isConnectToNext: 0
 --- !u!23 &163788106
