@@ -6,13 +6,13 @@ import sys
 
 if __name__ == '__main__':
 
-    if len(sys.argv) < 5:
+    if len(sys.argv) < 6:
         print 'uncorrect number of system arguments'
         sys.exit(1)
 
     GEAR_NAME = sys.argv[1]
     NUM_TOOTH = int(sys.argv[2])
-    OUTER_RADIUS = 0.5
+    OUTER_RADIUS = float(sys.argv[5])
     YS = [0.5, -0.5]
     INNER_RADIUS = float(sys.argv[3])
     MIDDLE_RAIUDS = ((OUTER_RADIUS - INNER_RADIUS) * 2.0 / 3.0) + INNER_RADIUS
